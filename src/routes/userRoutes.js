@@ -1,7 +1,5 @@
 const express = require("express");
 const userController = require("../controllers/userController");
-const recipeController = require("../controllers/recipeController");
-const methodNotAllowed = require("../middleware/methodHandler");
 const {
   validateCreateUser,
   validateUpdateUser,
@@ -10,20 +8,13 @@ const {
 
 const router = express.Router();
 
-router.route("/").get(userController.getUsers).all(methodNotAllowed);
-router.route("/create").post(    
-  validateCreateUser,
-  checkValidationResult,userController.createUser).all(methodNotAllowed);
+router.route("/").get(userController.getUsers);
+router
+  .route("/create")
+  .post(validateCreateUser, checkValidationResult, userController.createUser);
 router
   .route("/update/:id")
-  .put(  
-    validateUpdateUser,
-    checkValidationResult,
-    userController.updateUser)
-  .all(methodNotAllowed);
-router
-  .route("/delete/:id")
-  .delete(userController.deleteUser)
-  .all(methodNotAllowed);
+  .put(validateUpdateUser, checkValidationResult, userController.updateUser);
+router.route("/delete/:id").delete(userController.deleteUser);
 
 module.exports = router;

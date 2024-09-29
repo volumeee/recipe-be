@@ -3,31 +3,47 @@ const { body, validationResult } = require("express-validator");
 // validateCreateUser
 exports.validateCreateUser = [
   body("nama").trim().isLength({ min: 2, max: 50 }).escape(),
-  body("email").isEmail().normalizeEmail(),
+  body("email").isEmail().normalizeEmail().escape(),
   body("password")
     .isLength({ min: 8 })
-    .matches(/^(?=.*[A-Z])/)
-    .matches(/^(?=.*[!@#$%^&*])/)
-    .withMessage("Password harus diisi minimal 8 karakter")
-    .matches(/^(?=.*[A-Z])/)
-    .withMessage("Password harus berisi setidaknya 1 huruf kapital")
-    .matches(/^(?=.*[!@#$%^&*])/)
-    .withMessage("Password harus berisi setidaknya 1 karakter khusus")
+    .withMessage("Password harus minimal 8 karakter")
+    .custom((value, { req }) => {
+      if (value.length >= 8) {
+        if (!/(?=.*[A-Z])/.test(value)) {
+          throw new Error("Password harus mengandung minimal 1 huruf kapital");
+        }
+        if (!/(?=.*[!@#$%^&*])/.test(value)) {
+          throw new Error(
+            "Password harus mengandung minimal 1 karakter khusus"
+          );
+        }
+      }
+      return true;
+    })
     .escape(),
 ];
 
 // validateUpdateUser
 exports.validateUpdateUser = [
   body("nama").optional().trim().isLength({ min: 2, max: 50 }).escape(),
-  body("email").optional().isEmail().normalizeEmail(),
+  body("email").optional().isEmail().normalizeEmail().escape(),
   body("password")
     .optional()
     .isLength({ min: 8 })
-    .withMessage("Password harus diisi dan harus terdiri dari 8 karakter")
-    .matches(/^(?=.*[A-Z])/)
-    .withMessage("Password harus berisi setidaknya 1 huruf kapital")
-    .matches(/^(?=.*[!@#$%^&*])/)
-    .withMessage("Password harus berisi setidaknya 1 karakter khusus")
+    .withMessage("Password harus minimal 8 karakter")
+    .custom((value, { req }) => {
+      if (value.length >= 8) {
+        if (!/(?=.*[A-Z])/.test(value)) {
+          throw new Error("Password harus mengandung minimal 1 huruf kapital");
+        }
+        if (!/(?=.*[!@#$%^&*])/.test(value)) {
+          throw new Error(
+            "Password harus mengandung minimal 1 karakter khusus"
+          );
+        }
+      }
+      return true;
+    })
     .escape(),
 ];
 
