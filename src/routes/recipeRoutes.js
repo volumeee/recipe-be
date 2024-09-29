@@ -12,7 +12,7 @@ const router = express.Router();
 
 router.route("/").get(recipeController.getRecipes);
 router.route("/category").get(recipeController.getCategory);
-router.route("/detail/:id").get(recipeController.getRecipeById);
+router.route("/:id/detail").get(recipeController.getRecipeById);
 router
   .route("/create")
   .post(
@@ -23,7 +23,7 @@ router
     recipeController.createRecipe
   );
 router
-  .route("/update/:id")
+  .route("/:id/update")
   .put(
     upload.single("imageUrl"),
     authController.protect,
@@ -32,7 +32,7 @@ router
     recipeController.updateRecipe
   );
 router
-  .route("/delete/:id")
+  .route("/:id/delete")
   .delete(authController.protect, recipeController.deleteRecipe);
 
 module.exports = router;

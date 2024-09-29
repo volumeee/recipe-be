@@ -13,8 +13,8 @@ router
   .route("/create")
   .post(validateCreateUser, checkValidationResult, userController.createUser);
 router
-  .route("/update/:id")
+  .route("/:id/update")
   .put(validateUpdateUser, checkValidationResult, userController.updateUser);
-router.route("/delete/:id").delete(userController.deleteUser);
+router.route("/:id/delete").delete(userController.deleteUser);
 
 module.exports = router;
