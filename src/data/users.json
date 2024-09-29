@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "nama": "bagus",
+    "email": "bagus@gmail.com",
+    "password": "$2b$10$w18xQVOLHx3neVUrVWFBk.yhfyxtlKV94V/M7fKoWMbv75eoOQrbW",
+    "created_at": "2024-09-28T11:21:20.607Z",
+    "updated_at": "2024-09-29T00:51:41.930Z"
+  }
+]

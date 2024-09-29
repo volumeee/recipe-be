@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Main Course",
+    "description": "Hidangan utama dalam suatu sajian"
+  },
+  {
+    "id": 2,
+    "name": "Appetizer",
+    "description": "Hidangan pembuka untuk menggugah selera"
+  },
+  {
+    "id": 3,
+    "name": "Dessert",
+    "description": "Hidangan penutup yang manis"
+  },
+  {
+    "id": 4,
+    "name": "Beverage",
+    "description": "Minuman pendamping hidangan"
+  },
+  {
+    "id": 5,
+    "name": "Salad",
+    "description": "Hidangan ringan berbahan dasar sayuran"
+  },
+  {
+    "id": 6,
+    "name": "Soup",
+    "description": "Hidangan berkuah yang disajikan panas atau dingin"
+  },
+  {
+    "id": 7,
+    "name": "Breakfast",
+    "description": "Hidangan yang cocok untuk sarapan"
+  },
+  {
+    "id": 8,
+    "name": "Snack",
+    "description": "Makanan ringan untuk camilan"
+  }
+]
