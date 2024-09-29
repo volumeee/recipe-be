@@ -6,5 +6,13 @@
     "password": "$2b$10$w18xQVOLHx3neVUrVWFBk.yhfyxtlKV94V/M7fKoWMbv75eoOQrbW",
     "created_at": "2024-09-28T11:21:20.607Z",
     "updated_at": "2024-09-29T01:23:22.589Z"
+  },
+  {
+    "id": 2,
+    "nama": "admin",
+    "email": "admin@example.com",
+    "password": "$2b$10$VJcpXRjk9uQdBz.Zjn6C8OXYpV8.ea5TV055/9EmYP2Q3x/ByVO7i",
+    "created_at": "2024-09-29T08:05:11.976Z",
+    "updated_at": "2024-09-29T08:05:11.976Z"
   }
 ]
