@@ -1,8 +1,8 @@
-# Recipe App API
+# API Aplikasi Resep
 
-This is a RESTful API for managing recipes, users, and authentication.
+Ini adalah API RESTful untuk mengelola resep, pengguna, dan autentikasi.
 
-## Project Structure
+## Struktur Proyek
 
 ```
 recipe_api/
@@ -38,72 +38,72 @@ recipe_api/
 └── package.json
 ```
 
-## API Endpoints
+## Endpoint API
 
-### Authentication
+### Autentikasi
 
-- `POST /api/auth/login`: User login
-- `POST /api/auth/register`: User registration
+- `POST /api/auth/login`: Login pengguna
+- `POST /api/auth/register`: Registrasi pengguna
 
-### Users
+### Pengguna
 
-- `GET /api/users`: Get all users
-- `POST /api/users/create`: Create a new user
-- `PUT /api/users/:id/update`: Update a user
-- `DELETE /api/users/:id/delete`: Delete a user
+- `GET /api/users`: Mendapatkan semua pengguna
+- `POST /api/users/create`: Membuat pengguna baru
+- `PUT /api/users/:id/update`: Memperbarui pengguna
+- `DELETE /api/users/:id/delete`: Menghapus pengguna
 
-### Recipes
+### Resep
 
-- `GET /api/recipes`: Get all recipes
-- `GET /api/recipes/category`: Get all recipe categories
-- `GET /api/recipes/:id/detail`: Get a specific recipe
-- `POST /api/recipes/create`: Create a new recipe
-- `PUT /api/recipes/:id/update`: Update a recipe
-- `DELETE /api/recipes/:id/delete`: Delete a recipe
+- `GET /api/recipes`: Mendapatkan semua resep
+- `GET /api/recipes/category`: Mendapatkan semua kategori resep
+- `GET /api/recipes/:id/detail`: Mendapatkan detail resep tertentu
+- `POST /api/recipes/create`: Membuat resep baru
+- `PUT /api/recipes/:id/update`: Memperbarui resep
+- `DELETE /api/recipes/:id/delete`: Menghapus resep
 
 ## Middleware
 
-- `authController.protect`: Protects routes, ensuring only authenticated users can access them
-- `validateInputRecipe`: Validates recipe input data
-- `validateUpdateRecipe`: Validates recipe update data
-- `validateCreateUser`: Validates user creation data
-- `validateUpdateUser`: Validates user update data
-- `checkValidationResult`: Checks the result of validation middleware
-- `responseHandler`: Handles API responses
-- `methodNotAllowed`: Handles undefined routes
+- `authController.protect`: Melindungi rute, memastikan hanya pengguna terautentikasi yang dapat mengaksesnya
+- `validateInputRecipe`: Memvalidasi data input resep
+- `validateUpdateRecipe`: Memvalidasi data pembaruan resep
+- `validateCreateUser`: Memvalidasi data pembuatan pengguna
+- `validateUpdateUser`: Memvalidasi data pembaruan pengguna
+- `checkValidationResult`: Memeriksa hasil dari middleware validasi
+- `responseHandler`: Menangani respons API
+- `methodNotAllowed`: Menangani rute yang tidak terdefinisi
 
-## File Upload
+## Unggah File
 
-The API uses `multer` for handling file uploads, specifically for recipe images.
+API ini menggunakan `multer` untuk menangani unggahan file, khususnya untuk gambar resep.
 
-## Getting Started
+## Memulai
 
-1. Clone the repository:
+1. Klon repositori:
 
    ```
-   git clone <repository-url>
+   git clone <url-repositori>
    cd recipe-app-api
    ```
 
-2. Install dependencies:
+2. Instal dependensi:
 
    ```
    npm install
    ```
 
-3. Set up your environment variables in a `.env` file.
+3. Atur variabel lingkungan di file `.env`.
 
-4. Start the server:
-   - For production:
+4. Jalankan server:
+   - Untuk produksi:
      ```
      npm start
      ```
-   - For development (with nodemon):
+   - Untuk pengembangan (dengan nodemon):
      ```
      npm run dev
      ```
 
-## Dependencies
+## Dependensi
 
 - express: ^4.21.0
 - body-parser: ^1.20.3
@@ -114,23 +114,19 @@ The API uses `multer` for handling file uploads, specifically for recipe images.
 - express-rate-limit: ^7.4.0
 - xss: ^1.0.15
 
-## Dev Dependencies
+## Dependensi Pengembangan
 
 - nodemon: ^3.1.7
 
-## Scripts
+## Skrip
 
-- `npm start`: Starts the server using Node.js
-- `npm run dev`: Starts the server using nodemon for development
+- `npm start`: Menjalankan server menggunakan Node.js
+- `npm run dev`: Menjalankan server menggunakan nodemon untuk pengembangan
 
-## Version
+## Versi
 
 1.0.0
 
-## License
+## Catatan
 
-ISC
-
-## Note
-
-This README provides an overview of the API structure and endpoints. For detailed API documentation, consider using tools like Swagger or creating a separate API documentation file.
+README ini memberikan gambaran umum tentang struktur API dan endpoint. Untuk dokumentasi API yang lebih rinci, pertimbangkan untuk menggunakan alat seperti Swagger atau membuat file dokumentasi API terpisah.
