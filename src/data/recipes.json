@@ -1,26 +1,97 @@
 [
   {
     "id": 1,
-    "judul": "Delicious Pasta Meanwhile",
-    "deskripsi": "A simple and tasty pasta recipe",
+    "judul": "Nasi Goreng Spesial",
+    "deskripsi": "Nasi goreng khas Indonesia dengan bumbu rempah",
     "bahan": [
-      "200g spaghetti",
-      "2 cloves of garlic",
-      "2 tablespoons olive oil",
-      "Salt and pepper to taste"
+      "3 piring nasi putih",
+      "2 butir telur",
+      "100g ayam potong dadu",
+      "2 siung bawang putih",
+      "3 siung bawang merah",
+      "2 sdm kecap manis",
+      "1 sdm saus tiram",
+      "Garam dan merica secukupnya"
     ],
     "langkah": [
-      "Boil water inasd a large pot",
-      "Add salt and spaghetti to the boiling water",
-      "Meanwhile, sauté minced garlic in olive oil",
-      "Drain pasta and mix with garlic oil",
-      "Season with salt and pepper"
+      "Tumis bawang putih dan bawang merah hingga harum",
+      "Masukkan ayam, masak hingga matang",
+      "Tambahkan telur, aduk rata",
+      "Masukkan nasi, kecap manis, saus tiram, garam, dan merica",
+      "Aduk rata hingga semua bahan tercampur dan nasi panas",
+      "Sajikan dengan kerupuk dan acar"
     ],
-    "categoryId": 2,
+    "categoryId": 1,
     "userId": 1,
     "created_at": "2024-09-28T15:01:32.362Z",
-    "updated_at": "2024-09-29T00:22:06.380Z",
+    "updated_at": "2024-09-29T05:56:05.701Z",
     "user": "admin",
-    "category": "Main Course"
+    "category": "Main Course",
+    "imageUrl": "https://images.pexels.com/photos/8570300/pexels-photo-8570300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 2,
+    "judul": "Soto Ayam",
+    "deskripsi": "Sup ayam khas Indonesia dengan kuah kuning gurih",
+    "bahan": [
+      "500g ayam",
+      "2 liter air",
+      "3 lembar daun salam",
+      "2 batang serai",
+      "2 cm lengkuas",
+      "2 cm kunyit",
+      "4 siung bawang putih",
+      "6 siung bawang merah",
+      "Garam dan merica secukupnya"
+    ],
+    "langkah": [
+      "Rebus ayam dengan daun salam, serai, dan lengkuas hingga empuk",
+      "Haluskan bawang putih, bawang merah, dan kunyit",
+      "Tumis bumbu halus hingga harum",
+      "Masukkan bumbu ke dalam rebusan ayam",
+      "Bumbui dengan garam dan merica",
+      "Sajikan dengan nasi, tauge, dan bawang goreng"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-09-28T16:30:00.000Z",
+    "updated_at": "2024-09-29T05:58:08.241Z",
+    "user": "admin",
+    "category": "Soup",
+    "imageUrl": "https://images.pexels.com/photos/19141522/pexels-photo-19141522/free-photo-of-delicious-chicken-soup.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 3,
+    "judul": "Rendang Daging",
+    "deskripsi": "Daging sapi yang dimasak dengan rempah-rempah khas Padang",
+    "bahan": [
+      "1 kg daging sapi",
+      "1 liter santan kental",
+      "5 cm lengkuas",
+      "3 batang serai",
+      "5 lembar daun jeruk",
+      "3 lembar daun salam",
+      "10 siung bawang merah",
+      "6 siung bawang putih",
+      "4 buah cabai merah besar",
+      "2 cm jahe",
+      "2 cm kunyit",
+      "1 sdm ketumbar"
+    ],
+    "langkah": [
+      "Haluskan bawang merah, bawang putih, cabai, jahe, kunyit, dan ketumbar",
+      "Tumis bumbu halus dengan serai, daun jeruk, dan daun salam",
+      "Masukkan daging sapi, aduk rata",
+      "Tuang santan, masak dengan api kecil sambil sesekali diaduk",
+      "Masak hingga santan mengering dan daging empuk",
+      "Sajikan dengan nasi putih"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-28T18:45:00.000Z",
+    "updated_at": "2024-09-29T06:00:30.362Z",
+    "user": "admin",
+    "category": "Main Course",
+    "imageUrl": "https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ]

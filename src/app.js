@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", authController.protect, userRoutes);
-app.use("/api/recipes", authController.protect, userRoutes);
+app.use("/api/recipes", authController.protect, recipeRoutes);
 
 // Method Not Allowed handler untuk semua route yang tidak terdefinisi
 app.all("*", methodNotAllowed);

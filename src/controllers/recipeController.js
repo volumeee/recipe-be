@@ -4,7 +4,7 @@ const { sanitizeInput } = require("../utils/xssSanitizer");
 
 exports.getRecipes = async (req, res, next) => {
   try {
-    const recipes = await Recipe.getAll();
+    const recipes = await Recipe.getList();
     res.status(200).json({
       status: "success",
       recipes,
@@ -41,8 +41,10 @@ exports.getRecipeById = async (req, res, next) => {
 
 exports.createRecipe = async (req, res, next) => {
   try {
-    const { judul, deskripsi, bahan, langkah, categoryId, userId } = req.body;
+    const { judul, imageUrl, deskripsi, bahan, langkah, categoryId, userId } =
+      req.body;
     const sanitizedJudul = sanitizeInput(judul);
+    const sanitizedImageUrl = sanitizeInput(imageUrl);
     const sanitizedDeskripsi = sanitizeInput(deskripsi);
     const sanitizedBahan = Array.isArray(bahan) ? bahan.map(sanitizeInput) : [];
     const sanitizedLangkah = Array.isArray(langkah)
@@ -58,6 +60,7 @@ exports.createRecipe = async (req, res, next) => {
 
     const recipe = await Recipe.create({
       judul: sanitizedJudul,
+      imageUrl: sanitizedImageUrl,
       deskripsi: sanitizedDeskripsi,
       bahan: sanitizedBahan,
       langkah: sanitizedLangkah,
@@ -76,10 +79,12 @@ exports.createRecipe = async (req, res, next) => {
 exports.updateRecipe = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { judul, deskripsi, bahan, langkah, categoryId, userId } = req.body;
+    const { judul, imageUrl, deskripsi, bahan, langkah, categoryId, userId } =
+      req.body;
 
     const updateData = {};
     if (judul !== undefined) updateData.judul = sanitizeInput(judul);
+    if (imageUrl !== undefined) updateData.imageUrl = sanitizeInput(imageUrl);
     if (deskripsi !== undefined)
       updateData.deskripsi = sanitizeInput(deskripsi);
     if (bahan !== undefined)

@@ -5,38 +5,60 @@ const createError = require("http-errors");
 
 class Recipe {
   static async getAll() {
+    const [recipesData] = await Promise.all([
+      fs.readFile(config.dbRecipePath, "utf8"),
+    ]);
+    const recipes = JSON.parse(recipesData);
+
+    return recipes.map((recipe) => ({
+      ...recipe,
+    }));
+  }
+
+  static async getList() {
+    const recipes = await this.getAll();
+    return recipes.map(({ id, judul, imageUrl, deskripsi }) => ({
+      id,
+      judul,
+      imageUrl,
+      deskripsi,
+    }));
+  }
+
+  static async getById(id) {
     const [recipesData, usersData, categoriesData] = await Promise.all([
       fs.readFile(config.dbRecipePath, "utf8"),
       fs.readFile(config.dbUserPath, "utf8"),
       fs.readFile(config.dbCategoryPath, "utf8"),
     ]);
+
     const recipes = JSON.parse(recipesData);
     const users = JSON.parse(usersData);
     const categories = JSON.parse(categoriesData);
 
-    return recipes.map((recipe) => ({
+    const numId = Number(id);
+    const recipe = recipes.find((recipe) => recipe.id === numId);
+
+    if (!recipe) {
+      throw createError(404, "Resep tidak ditemukan");
+    }
+
+    const user = users.find((user) => user.id === recipe.userId);
+    const category = categories.find(
+      (category) => category.id === recipe.categoryId
+    );
+
+    return {
       ...recipe,
-      user: users.find((user) => user.id === recipe.userId)?.nama || "Unknown",
-      category:
-        categories.find((category) => category.id === recipe.categoryId)
-          ?.name || "Unknown",
-    }));
+      user: user ? user.nama : "Unknown",
+      category: category ? category.name : "Unknown",
+    };
   }
 
   static async getAllCategory() {
     const data = await fs.readFile(config.dbCategoryPath, "utf8");
     const categories = JSON.parse(data);
     return categories;
-  }
-
-  static async getById(id) {
-    const recipes = await this.getAll();
-    const numId = Number(id);
-    const recipe = recipes.find((recipe) => recipe.id === numId);
-    if (!recipe) {
-      throw createError(404, "Resep tidak ditemukan");
-    }
-    return recipe;
   }
 
   static async getLastId() {
@@ -47,6 +69,7 @@ class Recipe {
 
   static async create({
     judul,
+    imageUrl,
     deskripsi,
     bahan,
     langkah,
@@ -60,6 +83,7 @@ class Recipe {
     const recipe = {
       id: lastId + 1,
       judul,
+      imageUrl,
       deskripsi,
       bahan,
       langkah,
