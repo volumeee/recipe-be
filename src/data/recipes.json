@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "judul": "Nasi Goreng Spesial",
+    "judul": "Delicious Pasta",
     "deskripsi": "Nasi goreng khas Indonesia dengan bumbu rempah",
     "bahan": [
       "3 piring nasi putih",
@@ -24,10 +24,10 @@
     "categoryId": 1,
     "userId": 1,
     "created_at": "2024-09-28T15:01:32.362Z",
-    "updated_at": "2024-09-29T05:56:05.701Z",
+    "updated_at": "2024-09-29T07:34:22.704Z",
     "user": "admin",
     "category": "Main Course",
-    "imageUrl": "https://images.pexels.com/photos/8570300/pexels-photo-8570300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "imageUrl": "https://images.pexsels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": 2,
@@ -89,7 +89,7 @@
     "categoryId": 1,
     "userId": 1,
     "created_at": "2024-09-28T18:45:00.000Z",
-    "updated_at": "2024-09-29T06:00:30.362Z",
+    "updated_at": "2024-09-29T07:11:17.669Z",
     "user": "admin",
     "category": "Main Course",
     "imageUrl": "https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

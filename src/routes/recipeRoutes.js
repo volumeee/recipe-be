@@ -1,5 +1,6 @@
 const express = require("express");
 const recipeController = require("../controllers/recipeController");
+const upload = require("../utils/uploadImage");
 const {
   validateInputRecipe,
   validateUpdateRecipe,
@@ -14,6 +15,7 @@ router.route("/detail/:id").get(recipeController.getRecipeById);
 router
   .route("/create")
   .post(
+    upload.single("imageUrl"),
     validateInputRecipe,
     checkValidationResult,
     recipeController.createRecipe
@@ -21,6 +23,7 @@ router
 router
   .route("/update/:id")
   .put(
+    upload.single("imageUrl"),
     validateUpdateRecipe,
     checkValidationResult,
     recipeController.updateRecipe

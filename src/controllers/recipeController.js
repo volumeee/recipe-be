@@ -1,6 +1,8 @@
 const Recipe = require("../models/Recipe");
 const createError = require("http-errors");
 const { sanitizeInput } = require("../utils/xssSanitizer");
+const path = require("path");
+const fs = require("fs").promises;
 
 exports.getRecipes = async (req, res, next) => {
   try {
@@ -44,7 +46,6 @@ exports.createRecipe = async (req, res, next) => {
     const { judul, imageUrl, deskripsi, bahan, langkah, categoryId, userId } =
       req.body;
     const sanitizedJudul = sanitizeInput(judul);
-    const sanitizedImageUrl = sanitizeInput(imageUrl);
     const sanitizedDeskripsi = sanitizeInput(deskripsi);
     const sanitizedBahan = Array.isArray(bahan) ? bahan.map(sanitizeInput) : [];
     const sanitizedLangkah = Array.isArray(langkah)
@@ -58,15 +59,27 @@ exports.createRecipe = async (req, res, next) => {
       throw createError(400, "Invalid categoryId or userId");
     }
 
+    let finalImageUrl;
+
+    if (req.file) {
+      finalImageUrl = `/uploads/${req.file.filename}`;
+      console.log(finalImageUrl);
+    } else if (imageUrl) {
+      finalImageUrl = sanitizeInput(imageUrl);
+    } else {
+      finalImageUrl = null;
+    }
+
     const recipe = await Recipe.create({
       judul: sanitizedJudul,
-      imageUrl: sanitizedImageUrl,
+      imageUrl: finalImageUrl,
       deskripsi: sanitizedDeskripsi,
       bahan: sanitizedBahan,
       langkah: sanitizedLangkah,
       categoryId: parsedCategoryId,
       userId: parsedUserId,
     });
+
     res.status(201).json({
       status: "success",
       recipe,
@@ -79,12 +92,10 @@ exports.createRecipe = async (req, res, next) => {
 exports.updateRecipe = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { judul, imageUrl, deskripsi, bahan, langkah, categoryId, userId } =
-      req.body;
+    const { judul, deskripsi, bahan, langkah, categoryId, userId } = req.body;
 
     const updateData = {};
     if (judul !== undefined) updateData.judul = sanitizeInput(judul);
-    if (imageUrl !== undefined) updateData.imageUrl = sanitizeInput(imageUrl);
     if (deskripsi !== undefined)
       updateData.deskripsi = sanitizeInput(deskripsi);
     if (bahan !== undefined)
@@ -97,10 +108,20 @@ exports.updateRecipe = async (req, res, next) => {
       updateData.categoryId = parseInt(categoryId, 10);
     if (userId !== undefined) updateData.userId = parseInt(userId, 10);
 
+    // Handle image update
+    let finalImageUrl;
+    if (req.file) {
+      finalImageUrl = `/uploads/${req.file.filename}`;
+      console.log(finalImageUrl);
+      updateData.imageUrl = finalImageUrl;
+    } else if (req.body.imageUrl !== undefined) {
+      updateData.imageUrl = sanitizeInput(req.body.imageUrl);
+    }
+
     if (Object.keys(updateData).length === 0) {
       throw createError(
         400,
-        "Setidaknya 1 field harus diisi (judul, deskripsi, bahan, langkah, categoryId, userId)"
+        "Setidaknya 1 field harus diisi (judul, deskripsi, bahan, langkah, categoryId, userId, imageUrl)"
       );
     }
 
@@ -112,10 +133,24 @@ exports.updateRecipe = async (req, res, next) => {
       throw createError(400, "Invalid userId");
     }
 
-    const updateRecipe = await Recipe.update(id, updateData);
+    const oldRecipe = await Recipe.getById(id);
+    const updatedRecipe = await Recipe.update(id, updateData);
+
+    // Delete old image if a new one is uploaded
+    if (
+      req.file &&
+      oldRecipe.imageUrl &&
+      oldRecipe.imageUrl !== finalImageUrl
+    ) {
+      const oldImagePath = path.join(__dirname, "..", oldRecipe.imageUrl);
+      await fs
+        .unlink(oldImagePath)
+        .catch((err) => console.error("Error deleting old image:", err));
+    }
+
     res.status(200).json({
       status: "success",
-      recipe: updateRecipe,
+      recipe: updatedRecipe,
     });
   } catch (error) {
     next(error);
