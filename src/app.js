@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", authController.protect, userRoutes);
-app.use("/api/recipes", authController.protect, recipeRoutes);
+app.use("/api/recipes", recipeRoutes);
 
 // Method Not Allowed handler untuk semua route yang tidak terdefinisi
 app.all("*", methodNotAllowed);
