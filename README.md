@@ -42,24 +42,24 @@ recipe_api/
 
 ### Autentikasi
 
-- `POST /api/auth/login`: Login pengguna
-- `POST /api/auth/register`: Registrasi pengguna
+- `POST /api/auth/login`: Login pengguna`public`
+- `POST /api/auth/register`: Registrasi pengguna`public`
 
 ### Pengguna
 
-- `GET /api/users`: Mendapatkan semua pengguna
-- `POST /api/users/create`: Membuat pengguna baru
-- `PUT /api/users/:id/update`: Memperbarui pengguna
-- `DELETE /api/users/:id/delete`: Menghapus pengguna
+- `GET /api/users`: Mendapatkan semua pengguna`protect`
+- `POST /api/users/create`: Membuat pengguna baru`protect`
+- `PUT /api/users/:id/update`: Memperbarui pengguna`protect`
+- `DELETE /api/users/:id/delete`: Menghapus pengguna`protect`
 
 ### Resep
 
-- `GET /api/recipes`: Mendapatkan semua resep
-- `GET /api/recipes/category`: Mendapatkan semua kategori resep
-- `GET /api/recipes/:id/detail`: Mendapatkan detail resep tertentu
-- `POST /api/recipes/create`: Membuat resep baru
-- `PUT /api/recipes/:id/update`: Memperbarui resep
-- `DELETE /api/recipes/:id/delete`: Menghapus resep
+- `GET /api/recipes`: Mendapatkan semua resep`public`
+- `GET /api/recipes/category`: Mendapatkan semua kategori resep`public`
+- `GET /api/recipes/:id/detail`: Mendapatkan detail resep tertentu`public`
+- `POST /api/recipes/create`: Membuat resep baru`protect`
+- `PUT /api/recipes/:id/update`: Memperbarui resep`protect`
+- `DELETE /api/recipes/:id/delete`: Menghapus resep`protect`
 
 ## Middleware
 
