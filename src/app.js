@@ -12,6 +12,11 @@ const app = express();
 
 app.use(bodyParser.json());
 
+// Hello World API endpoint at root URL
+app.get("/", (req, res) => {
+  res.send("Hello World! This is a recipe API.");
+});
+
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", authController.protect, userRoutes);
