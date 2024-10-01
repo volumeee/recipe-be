@@ -6,10 +6,18 @@ const fs = require("fs").promises;
 
 exports.getRecipes = async (req, res, next) => {
   try {
-    const recipes = await Recipe.getList();
+    const { page = 1, limit = 10, category, search, sortBy } = req.query;
+    const options = {
+      page: parseInt(page) || 1,
+      limit: parseInt(limit) || 10,
+      category: parseInt(category) || null,
+      search,
+      sortBy,
+    };
+    const recipes = await Recipe.getList(options);
     res.status(200).json({
       status: "success",
-      recipes,
+      ...recipes,
     });
   } catch (error) {
     next(error);

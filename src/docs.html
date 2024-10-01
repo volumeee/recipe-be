@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 2px 5px;
+            font-family: monospace;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Recipe API Documentation</h1>
+
+    <h2>Endpoints</h2>
+
+    <h3>Get Recipes</h3>
+    <p>Retrieve a list of recipes with optional filtering, pagination, and sorting.</p>
+    <ul>
+        <li><strong>URL:</strong> <code>/api/recipes</code></li>
+        <li><strong>Method:</strong> GET</li>
+        <li><strong>Auth required:</strong> No</li>
+    </ul>
+
+    <h4>Query Parameters</h4>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+        <tr>
+            <td><code>page</code></td>
+            <td>Page number for pagination</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><code>limit</code></td>
+            <td>Number of recipes per page</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><code>category</code></td>
+            <td>Filter recipes by category ID</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td><code>search</code></td>
+            <td>Search term to filter recipes</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td><code>sortBy</code></td>
+            <td>Field and order to sort results (format: field:order)</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <h4>Example Requests</h4>
+    <ol>
+        <li>Get the second page with 20 recipes per page:<br>
+            <code>GET /api/recipes?page=2&limit=20</code>
+        </li>
+        <li>Filter recipes by category:<br>
+            <code>GET /api/recipes?category=1</code>
+        </li>
+        <li>Search for recipes containing "pasta":<br>
+            <code>GET /api/recipes?search=pasta</code>
+        </li>
+        <li>Sort recipes by creation date (newest first):<br>
+            <code>GET /api/recipes?sortBy=created_at:desc</code>
+        </li>
+        <li>Combine filtering, pagination, and sorting:<br>
+            <code>GET /api/recipes?page=1&limit=10&category=2&search=salad&sortBy=judul:asc</code>
+        </li>
+    </ol>
+
+    <h4>Success Response</h4>
+    <ul>
+        <li><strong>Code:</strong> 200 OK</li>
+        <li><strong>Content:</strong></li>
+    </ul>
+    <pre><code>{
+  "status": "success",
+  "recipes": [
+    {
+      "id": 1,
+      "judul": "Recipe Title",
+      "imageUrl": "http://example.com/image.jpg",
+      "deskripsi": "Recipe description"
+    },
+    // ... more recipes
+  ],
+  "currentPage": 1,
+  "totalPages": 5,
+  "totalRecipes": 50
+}</code></pre>
+
+    <h2>Other Endpoints</h2>
+    <p>The API also includes endpoints for user management and authentication:</p>
+    <ul>
+        <li><code>POST /api/auth/login</code> - User login</li>
+        <li><code>POST /api/auth/register</code> - User registration</li>
+    </ul>
+
+    <h2>Authentication</h2>
+    <p>Most endpoints require authentication. Use the <code>/api/auth</code> endpoints to obtain a token, then include
+        it in the <code>Authorization</code> header of your requests:</p>
+    <pre><code>Authorization: Bearer YOUR_TOKEN_HERE</code></pre>
+
+</body>
+
+</html>

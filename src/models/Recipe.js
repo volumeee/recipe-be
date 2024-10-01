@@ -15,14 +15,53 @@ class Recipe {
     }));
   }
 
-  static async getList() {
+  static async getList(options = {}) {
+    const { page = 1, limit = 10, category, search, sortBy } = options;
     const recipes = await this.getAll();
-    return recipes.map(({ id, judul, imageUrl, deskripsi }) => ({
-      id,
-      judul,
-      imageUrl,
-      deskripsi,
-    }));
+
+    // filtering
+    let filteredRecipes = recipes;
+    if (category) {
+      filteredRecipes = filteredRecipes.filter(
+        (recipe) => recipe.categoryId === category
+      );
+    }
+    if (search) {
+      const searchLower = search.toLowerCase();
+      filteredRecipes = filteredRecipes.filter(
+        (recipes) =>
+          recipes.judul.toLowerCase().includes(searchLower) ||
+          recipes.deskripsi.toLowerCase().includes(searchLower)
+      );
+    }
+
+    // sorting
+    if (sortBy) {
+      const [field, order] = sortBy.split(":");
+      filteredRecipes = filteredRecipes.sort((a, b) => {
+        if (order === "desc") {
+          return b[field] - a[field] ? 1 : -1;
+        }
+        return a[field] - b[field] ? 1 : -1;
+      });
+    }
+
+    // pagination
+    const startIndex = (page - 1) * limit;
+    const endIndex = page * limit;
+    const paginationRecipes = filteredRecipes.slice(startIndex, endIndex);
+
+    return {
+      data: paginationRecipes.map(({ id, judul, imageUrl, deskripsi }) => ({
+        id,
+        judul,
+        imageUrl,
+        deskripsi,
+      })),
+      currentPage: page,
+      totalPages: Math.ceil(filteredRecipes.length / limit),
+      totalRecipes: filteredRecipes.length,
+    };
   }
 
   static async getById(id) {

@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const bodyParser = require("body-parser");
 const createError = require("http-errors");
 const userRoutes = require("./routes/userRoutes");
@@ -13,7 +14,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello World! This is a recipe API.");
+  res.sendFile(path.join(__dirname, "docs.html"));
 });
 
 // Routes
