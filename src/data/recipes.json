@@ -87,5 +87,1293 @@
     "created_at": "2024-09-28T18:45:00.000Z",
     "updated_at": "2024-09-29T07:11:17.669Z",
     "imageUrl": "https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 4,
+    "judul": "Gado-gado",
+    "deskripsi": "Salad sayur dengan saus kacang khas Indonesia",
+    "bahan": [
+      "200g kacang tanah goreng",
+      "3 siung bawang putih",
+      "2 buah cabai merah",
+      "1 sdm gula merah",
+      "1 sdm air asam jawa",
+      "Garam secukupnya",
+      "Sayuran rebus (kangkung, bayam, wortel, kacang panjang)",
+      "Tahu dan tempe goreng",
+      "Telur rebus",
+      "Lontong atau ketupat"
+    ],
+    "langkah": [
+      "Haluskan kacang tanah, bawang putih, dan cabai merah",
+      "Tambahkan gula merah, air asam jawa, dan garam, aduk rata",
+      "Encerkan saus kacang dengan air panas hingga kekentalan yang diinginkan",
+      "Tata sayuran rebus, tahu, tempe, dan telur di atas piring",
+      "Siram dengan saus kacang",
+      "Sajikan dengan lontong atau ketupat"
+    ],
+    "categoryId": 5,
+    "userId": 1,
+    "created_at": "2024-09-29T09:15:00.000Z",
+    "updated_at": "2024-09-29T09:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/123456/pexels-photo-123456.jpeg"
+  },
+  {
+    "id": 5,
+    "judul": "Sate Ayam",
+    "deskripsi": "Potongan ayam yang ditusuk dan dipanggang dengan bumbu kacang",
+    "bahan": [
+      "500g daging ayam potong dadu",
+      "200g kacang tanah goreng",
+      "4 siung bawang putih",
+      "3 siung bawang merah",
+      "2 buah cabai merah",
+      "2 sdm kecap manis",
+      "1 sdm gula merah",
+      "Garam secukupnya",
+      "Tusuk sate"
+    ],
+    "langkah": [
+      "Tusuk potongan ayam dengan tusuk sate",
+      "Haluskan kacang tanah, bawang putih, bawang merah, dan cabai merah",
+      "Tambahkan kecap manis, gula merah, dan garam ke dalam bumbu halus",
+      "Bakar sate ayam sambil diolesi bumbu kacang",
+      "Sajikan sate dengan sisa bumbu kacang sebagai saus"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-29T10:30:00.000Z",
+    "updated_at": "2024-09-29T10:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/789789/pexels-photo-789789.jpeg"
+  },
+  {
+    "id": 6,
+    "judul": "Nasi Uduk",
+    "deskripsi": "Nasi yang dimasak dengan santan dan rempah-rempah",
+    "bahan": [
+      "500g beras",
+      "500ml santan",
+      "2 lembar daun pandan",
+      "2 lembar daun salam",
+      "1 batang serai",
+      "1 cm lengkuas",
+      "Garam secukupnya"
+    ],
+    "langkah": [
+      "Cuci beras hingga bersih",
+      "Masak beras dengan santan, daun pandan, daun salam, serai, dan lengkuas",
+      "Tambahkan garam secukupnya",
+      "Masak hingga nasi matang dan empuk",
+      "Sajikan dengan pelengkap seperti ayam goreng, tempe orek, dan sambal"
+    ],
+    "categoryId": 7,
+    "userId": 1,
+    "created_at": "2024-09-29T11:45:00.000Z",
+    "updated_at": "2024-09-29T11:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/101010/pexels-photo-101010.jpeg"
+  },
+  {
+    "id": 7,
+    "judul": "Sambal Terasi",
+    "deskripsi": "Sambal pedas dengan tambahan terasi udang",
+    "bahan": [
+      "10 buah cabai merah",
+      "5 buah cabai rawit",
+      "3 siung bawang merah",
+      "2 siung bawang putih",
+      "1 buah tomat",
+      "1 sdm terasi bakar",
+      "Gula dan garam secukupnya",
+      "2 sdm minyak goreng"
+    ],
+    "langkah": [
+      "Goreng cabai, bawang merah, bawang putih, dan tomat hingga layu",
+      "Haluskan bahan yang sudah digoreng bersama terasi bakar",
+      "Tambahkan gula dan garam sesuai selera",
+      "Tumis sambal dengan sedikit minyak hingga matang dan harum",
+      "Sajikan sebagai pendamping hidangan utama"
+    ],
+    "categoryId": 8,
+    "userId": 1,
+    "created_at": "2024-09-29T13:00:00.000Z",
+    "updated_at": "2024-09-29T13:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/202020/pexels-photo-202020.jpeg"
+  },
+  {
+    "id": 8,
+    "judul": "Es Cendol",
+    "deskripsi": "Minuman manis segar dengan cendol dan santan",
+    "bahan": [
+      "200g tepung hunkwe",
+      "1 liter air",
+      "Pasta pandan secukupnya",
+      "500ml santan kental",
+      "200g gula merah",
+      "Es serut"
+    ],
+    "langkah": [
+      "Campurkan tepung hunkwe dengan air dan pasta pandan, masak hingga mengental",
+      "Cetak adonan menjadi cendol dengan cetakan khusus",
+      "Rebus santan dengan sedikit garam",
+      "Larutkan gula merah dengan sedikit air, saring",
+      "Susun cendol, siram dengan santan dan gula merah",
+      "Tambahkan es serut, sajikan dingin"
+    ],
+    "categoryId": 4,
+    "userId": 1,
+    "created_at": "2024-09-29T14:15:00.000Z",
+    "updated_at": "2024-09-29T14:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/303030/pexels-photo-303030.jpeg"
+  },
+  {
+    "id": 9,
+    "judul": "Bakso",
+    "deskripsi": "Sup bakso daging sapi dengan mie dan tahu",
+    "bahan": [
+      "500g daging sapi giling",
+      "100g tepung tapioka",
+      "2 siung bawang putih",
+      "1 butir telur",
+      "Garam dan merica secukupnya",
+      "2 liter kaldu sapi",
+      "Mie kuning",
+      "Tahu",
+      "Daun bawang",
+      "Bawang goreng"
+    ],
+    "langkah": [
+      "Campurkan daging sapi giling, tepung tapioka, bawang putih halus, telur, garam, dan merica",
+      "Bentuk adonan menjadi bola-bola",
+      "Rebus bakso dalam air mendidih hingga mengapung",
+      "Siapkan kuah kaldu sapi",
+      "Rebus mie dan tahu",
+      "Susun bakso, mie, dan tahu dalam mangkuk, siram dengan kuah kaldu",
+      "Taburi dengan daun bawang dan bawang goreng"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-29T15:30:00.000Z",
+    "updated_at": "2024-09-29T15:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/404040/pexels-photo-404040.jpeg"
+  },
+  {
+    "id": 10,
+    "judul": "Pisang Goreng",
+    "deskripsi": "Camilan pisang yang digoreng dengan tepung crispy",
+    "bahan": [
+      "10 buah pisang kepok",
+      "200g tepung terigu",
+      "50g tepung beras",
+      "1 sdm gula pasir",
+      "1/2 sdt garam",
+      "1/2 sdt baking powder",
+      "200ml air",
+      "Minyak untuk menggoreng"
+    ],
+    "langkah": [
+      "Campurkan tepung terigu, tepung beras, gula, garam, dan baking powder",
+      "Tambahkan air sedikit demi sedikit, aduk hingga adonan kental",
+      "Kupas pisang dan belah menjadi dua",
+      "Celupkan pisang ke dalam adonan tepung",
+      "Goreng dalam minyak panas hingga keemasan",
+      "Tiriskan dan sajikan hangat"
+    ],
+    "categoryId": 8,
+    "userId": 1,
+    "created_at": "2024-09-29T16:45:00.000Z",
+    "updated_at": "2024-09-29T16:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/505050/pexels-photo-505050.jpeg"
+  },
+  {
+    "id": 11,
+    "judul": "Pecel Lele",
+    "deskripsi": "Ikan lele goreng dengan sambal pecel",
+    "bahan": [
+      "4 ekor ikan lele",
+      "2 siung bawang putih",
+      "1 cm kunyit",
+      "Garam secukupnya",
+      "Minyak untuk menggoreng",
+      "Bahan sambal pecel",
+      "Lalapan (timun, kemangi, selada)"
+    ],
+    "langkah": [
+      "Haluskan bawang putih, kunyit, dan garam",
+      "Lumuri ikan lele dengan bumbu halus, diamkan 15 menit",
+      "Goreng ikan lele hingga garing",
+      "Siapkan sambal pecel",
+      "Sajikan lele goreng dengan sambal pecel dan lalapan"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-29T18:00:00.000Z",
+    "updated_at": "2024-09-29T18:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/606060/pexels-photo-606060.jpeg"
+  },
+  {
+    "id": 12,
+    "judul": "Sayur Asem",
+    "deskripsi": "Sayur berkuah asam dengan berbagai sayuran",
+    "bahan": [
+      "1 buah jagung manis, potong-potong",
+      "100g kacang panjang",
+      "100g labu siam",
+      "50g daun melinjo",
+      "3 buah asam jawa",
+      "1 ruas lengkuas",
+      "2 lembar daun salam",
+      "Bumbu halus (bawang merah, bawang putih, kemiri)",
+      "Garam dan gula secukupnya"
+    ],
+    "langkah": [
+      "Rebus air hingga mendidih",
+      "Masukkan bumbu halus, lengkuas, dan daun salam",
+      "Tambahkan jagung, masak hingga setengah matang",
+      "Masukkan sayuran lainnya dan asam jawa",
+      "Bumbui dengan garam dan gula",
+      "Masak hingga semua sayuran matang"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-09-29T19:15:00.000Z",
+    "updated_at": "2024-09-29T19:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/707070/pexels-photo-707070.jpeg"
+  },
+  {
+    "id": 13,
+    "judul": "Nasi Kuning",
+    "deskripsi": "Nasi yang dimasak dengan kunyit dan santan",
+    "bahan": [
+      "500g beras",
+      "1 ruas kunyit, parut",
+      "2 lembar daun salam",
+      "1 batang serai",
+      "65ml santan kental",
+      "500ml air",
+      "Garam secukupnya"
+    ],
+    "langkah": [
+      "Cuci beras hingga bersih",
+      "Campurkan beras dengan kunyit parut, daun salam, dan serai",
+      "Tambahkan santan, air, dan garam",
+      "Masak dalam rice cooker hingga matang",
+      "Sajikan dengan pelengkap seperti ayam goreng, telur dadar, dan sambal"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-29T20:30:00.000Z",
+    "updated_at": "2024-09-29T20:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/808080/pexels-photo-808080.jpeg"
+  },
+  {
+    "id": 14,
+    "judul": "Martabak Manis",
+    "deskripsi": "Kue terang bulan dengan berbagai topping",
+    "bahan": [
+      "250g tepung terigu",
+      "1 butir telur",
+      "1 sdt ragi instan",
+      "50g gula pasir",
+      "300ml air",
+      "1/4 sdt baking powder",
+      "1/4 sdt soda kue",
+      "Margarin, keju, cokelat, dan kacang untuk topping"
+    ],
+    "langkah": [
+      "Campurkan tepung, gula, ragi, dan air, aduk rata",
+      "Diamkan adonan selama 1 jam",
+      "Tambahkan telur, baking powder, dan soda kue, aduk rata",
+      "Panaskan teflon, tuang adonan",
+      "Masak hingga berbentuk sarang dan bagian atas setengah matang",
+      "Beri margarin dan topping, lipat dan potong-potong"
+    ],
+    "categoryId": 3,
+    "userId": 1,
+    "created_at": "2024-09-29T21:45:00.000Z",
+    "updated_at": "2024-09-29T21:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/909090/pexels-photo-909090.jpeg"
+  },
+  {
+    "id": 15,
+    "judul": "Sop Buntut",
+    "deskripsi": "Sup buntut sapi dengan kuah bening dan sayuran",
+    "bahan": [
+      "1 kg buntut sapi",
+      "2 buah wortel, potong-potong",
+      "2 buah kentang, potong dadu",
+      "2 batang daun bawang",
+      "2 batang seledri",
+      "2 cm jahe, geprek",
+      "3 siung bawang putih, geprek",
+      "2 buah cengkeh",
+      "1 batang kayu manis",
+      "Garam dan merica secukupnya"
+    ],
+    "langkah": [
+      "Rebus buntut sapi hingga empuk",
+      "Tumis bawang putih dan jahe hingga harum",
+      "Masukkan tumisan ke dalam rebusan buntut",
+      "Tambahkan wortel, kentang, cengkeh, dan kayu manis",
+      "Masak hingga sayuran matang",
+      "Bumbui dengan garam dan merica",
+      "Tambahkan daun bawang dan seledri sebelum disajikan"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-09-29T23:00:00.000Z",
+    "updated_at": "2024-09-29T23:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/101010/pexels-photo-101010.jpeg"
+  },
+  {
+    "id": 16,
+    "judul": "Ayam Betutu",
+    "deskripsi": "Ayam utuh yang dimasak dengan bumbu khas Bali",
+    "bahan": [
+      "1 ekor ayam utuh",
+      "200g bumbu genep Bali",
+      "10 lembar daun salam",
+      "5 lembar daun jeruk",
+      "2 batang serai, geprek",
+      "3 cm lengkuas, geprek",
+      "Garam secukupnya",
+      "Daun pisang untuk membungkus"
+    ],
+    "langkah": [
+      "Lumuri ayam dengan bumbu genep dan garam",
+      "Masukkan daun salam, daun jeruk, serai, dan lengkuas ke dalam perut ayam",
+      "Bungkus ayam dengan daun pisang",
+      "Kukus ayam selama 1,5 jam hingga matang",
+      "Bakar sebentar untuk aroma yang lebih harum",
+      "Sajikan dengan plecing kangkung dan sambal matah"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T00:15:00.000Z",
+    "updated_at": "2024-09-30T00:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/111111/pexels-photo-111111.jpeg"
+  },
+  {
+    "id": 17,
+    "judul": "Serabi",
+    "deskripsi": "Kue tradisional berbentuk bundar dengan berbagai topping",
+    "bahan": [
+      "200g tepung beras",
+      "65ml santan kental",
+      "300ml air",
+      "1/4 sdt garam",
+      "1/4 sdt ragi instan",
+      "Daun pandan",
+      "Gula merah cair dan kelapa parut untuk topping"
+    ],
+    "langkah": [
+      "Campurkan tepung beras, santan, air, garam, dan ragi",
+      "Diamkan adonan selama 30 menit",
+      "Panaskan cetakan serabi",
+      "Tuang adonan, masak dengan api kecil dan tutup",
+      "Beri topping gula merah cair dan kelapa parut",
+      "Angkat dan sajikan hangat"
+    ],
+    "categoryId": 3,
+    "userId": 1,
+    "created_at": "2024-09-30T01:30:00.000Z",
+    "updated_at": "2024-09-30T01:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/121212/pexels-photo-121212.jpeg"
+  },
+  {
+    "id": 18,
+    "judul": "Opor Ayam",
+    "deskripsi": "Ayam yang dimasak dengan kuah santan dan rempah-rempah",
+    "bahan": [
+      "1 ekor ayam, potong 8",
+      "1 liter santan",
+      "3 lembar daun salam",
+      "2 batang serai, geprek",
+      "3 cm lengkuas, geprek",
+      "Bumbu halus (bawang merah, bawang putih, kemiri, ketumbar, kunyit)",
+      "Garam dan gula secukupnya",
+      "Bawang goreng untuk taburan"
+    ],
+    "langkah": [
+      "Tumis bumbu halus hingga harum",
+      "Masukkan ayam, daun salam, serai, dan lengkuas",
+      "Tuang santan, masak hingga mendidih",
+      "Kecilkan api, masak hingga ayam empuk dan kuah mengental",
+      "Bumbui dengan garam dan gula",
+      "Sajikan dengan taburan bawang goreng"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T02:45:00.000Z",
+    "updated_at": "2024-09-30T02:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/131313/pexels-photo-131313.jpeg"
+  },
+  {
+    "id": 19,
+    "judul": "Ketoprak",
+    "deskripsi": "Makanan khas Jakarta dengan tahu, bihun, dan bumbu kacang",
+    "bahan": [
+      "200g tahu, goreng dan potong dadu",
+      "100g bihun, rebus",
+      "100g tauge, rebus sebentar",
+      "2 buah lontong, potong-potong",
+      "2 butir telur, rebus",
+      "Bumbu kacang",
+      "Kecap manis",
+      "Bawang goreng",
+      "Kerupuk"
+    ],
+    "langkah": [
+      "Siapkan piring saji",
+      "Tata lontong, bihun, tahu, tauge, dan telur",
+      "Siram dengan bumbu kacang",
+      "Tambahkan kecap manis sesuai selera",
+      "Taburi dengan bawang goreng",
+      "Sajikan dengan kerupuk"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T04:00:00.000Z",
+    "updated_at": "2024-09-30T04:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/141414/pexels-photo-141414.jpeg"
+  },
+  {
+    "id": 20,
+    "judul": "Es Teler",
+    "deskripsi": "Minuman segar dengan potongan buah dan santan",
+    "bahan": [
+      "200g alpukat, potong dadu",
+      "200g kelapa muda, serut",
+      "100g nangka matang, potong-potong",
+      "100g cincau hitam, potong dadu",
+      "200ml santan cair",
+      "100ml sirup cocopandan",
+      "Es serut secukupnya",
+      "Susu kental manis secukupnya"
+    ],
+    "langkah": [
+      "Siapkan semua buah-buahan dan cincau dalam mangkuk",
+      "Tambahkan es serut",
+      "Tuang santan cair dan sirup cocopandan",
+      "Beri susu kental manis di atasnya",
+      "Aduk rata sebelum disajikan"
+    ],
+    "categoryId": 4,
+    "userId": 1,
+    "created_at": "2024-09-30T05:15:00.000Z",
+    "updated_at": "2024-09-30T05:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/151515/pexels-photo-151515.jpeg"
+  },
+  {
+    "id": 21,
+    "judul": "Ayam Penyet",
+    "deskripsi": "Ayam goreng yang dipenyet dengan sambal terasi",
+    "bahan": [
+      "1 ekor ayam, potong 4 bagian",
+      "5 siung bawang putih",
+      "3 cm kunyit",
+      "2 cm jahe",
+      "1 sdt ketumbar",
+      "Garam secukupnya",
+      "Minyak untuk menggoreng",
+      "Bahan sambal: cabai rawit, bawang putih, terasi"
+    ],
+    "langkah": [
+      "Haluskan bawang putih, kunyit, jahe, ketumbar, dan garam",
+      "Lumuri ayam dengan bumbu halus, diamkan 30 menit",
+      "Goreng ayam hingga kecokelatan",
+      "Ulek kasar sambal terasi",
+      "Penyet ayam di atas sambal",
+      "Sajikan dengan lalapan"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T06:30:00.000Z",
+    "updated_at": "2024-09-30T06:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/161616/pexels-photo-161616.jpeg"
+  },
+  {
+    "id": 22,
+    "judul": "Lontong Sayur",
+    "deskripsi": "Lontong dengan kuah sayur nangka dan gulai",
+    "bahan": [
+      "500g nangka muda, potong-potong",
+      "200g kacang panjang",
+      "500ml santan",
+      "2 lembar daun salam",
+      "2 cm lengkuas, geprek",
+      "Bumbu halus: bawang merah, bawang putih, cabai, kemiri",
+      "Garam dan gula secukupnya",
+      "Lontong"
+    ],
+    "langkah": [
+      "Rebus nangka hingga empuk",
+      "Tumis bumbu halus dengan daun salam dan lengkuas",
+      "Masukkan santan, didihkan",
+      "Tambahkan nangka dan kacang panjang",
+      "Masak hingga matang dan kuah mengental",
+      "Sajikan dengan lontong"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T07:45:00.000Z",
+    "updated_at": "2024-09-30T07:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/171717/pexels-photo-171717.jpeg"
+  },
+  {
+    "id": 23,
+    "judul": "Pempek",
+    "deskripsi": "Makanan khas Palembang berbahan dasar ikan dan tepung kanji",
+    "bahan": [
+      "500g ikan tenggiri giling",
+      "250g tepung kanji",
+      "100ml air es",
+      "2 siung bawang putih, haluskan",
+      "1 butir telur",
+      "Garam secukupnya",
+      "Minyak untuk menggoreng",
+      "Bahan cuko: gula merah, cabai rawit, bawang putih, cuka"
+    ],
+    "langkah": [
+      "Campur ikan giling, tepung kanji, air es, bawang putih, telur, dan garam",
+      "Bentuk adonan sesuai selera (pempek kapal selam, lenjer, dll)",
+      "Rebus pempek hingga mengapung",
+      "Goreng pempek hingga kecokelatan",
+      "Buat cuko dengan merebus semua bahan saus",
+      "Sajikan pempek dengan cuko"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T09:00:00.000Z",
+    "updated_at": "2024-09-30T09:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/181818/pexels-photo-181818.jpeg"
+  },
+  {
+    "id": 24,
+    "judul": "Bubur Ayam",
+    "deskripsi": "Bubur nasi dengan topping ayam suwir dan berbagai pelengkap",
+    "bahan": [
+      "200g beras",
+      "1 liter air",
+      "200g dada ayam, rebus dan suwir",
+      "2 siung bawang putih, haluskan",
+      "1 cm jahe, haluskan",
+      "Kecap manis",
+      "Bawang goreng",
+      "Daun bawang",
+      "Kerupuk",
+      "Kacang tanah goreng"
+    ],
+    "langkah": [
+      "Masak beras dengan air hingga menjadi bubur",
+      "Tumis bawang putih dan jahe hingga harum",
+      "Masukkan tumisan ke dalam bubur, aduk rata",
+      "Sajikan bubur dengan ayam suwir",
+      "Beri kecap manis, bawang goreng, daun bawang, kerupuk, dan kacang tanah goreng"
+    ],
+    "categoryId": 7,
+    "userId": 1,
+    "created_at": "2024-09-30T10:15:00.000Z",
+    "updated_at": "2024-09-30T10:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/191919/pexels-photo-191919.jpeg"
+  },
+  {
+    "id": 25,
+    "judul": "Nasi Liwet",
+    "deskripsi": "Nasi yang dimasak dengan santan dan rempah-rempah",
+    "bahan": [
+      "500g beras",
+      "65ml santan kental",
+      "2 lembar daun salam",
+      "2 lembar daun pandan",
+      "1 batang serai, geprek",
+      "3 siung bawang merah, iris",
+      "2 siung bawang putih, iris",
+      "Garam secukupnya"
+    ],
+    "langkah": [
+      "Cuci beras hingga bersih",
+      "Tumis bawang merah dan bawang putih hingga harum",
+      "Masukkan beras, santan, daun salam, daun pandan, serai, dan garam ke dalam rice cooker",
+      "Tambahkan air secukupnya",
+      "Masak hingga nasi matang",
+      "Sajikan dengan lauk seperti ayam goreng, tahu, dan sambal"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T11:30:00.000Z",
+    "updated_at": "2024-09-30T11:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/202020/pexels-photo-202020.jpeg"
+  },
+  {
+    "id": 26,
+    "judul": "Soto Betawi",
+    "deskripsi": "Sup daging sapi khas Jakarta dengan kuah santan",
+    "bahan": [
+      "500g daging sapi, potong dadu",
+      "2 buah kentang, potong dadu",
+      "2 buah tomat, potong-potong",
+      "500ml santan",
+      "2 batang serai, geprek",
+      "3 lembar daun jeruk",
+      "2 cm jahe, geprek",
+      "Bumbu halus: bawang merah, bawang putih, kemiri, ketumbar",
+      "Pelengkap: emping, bawang goreng, jeruk nipis"
+    ],
+    "langkah": [
+      "Rebus daging hingga empuk",
+      "Tumis bumbu halus, serai, daun jeruk, dan jahe hingga harum",
+      "Masukkan tumisan ke dalam rebusan daging",
+      "Tambahkan santan dan kentang, masak hingga kentang empuk",
+      "Tambahkan tomat dan masak sebentar",
+      "Sajikan dengan emping, bawang goreng, dan perasan jeruk nipis"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-09-30T12:45:00.000Z",
+    "updated_at": "2024-09-30T12:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/212121/pexels-photo-212121.jpeg"
+  },
+  {
+    "id": 27,
+    "judul": "Nasi Uduk",
+    "deskripsi": "Nasi yang dimasak dengan santan dan rempah-rempah",
+    "bahan": [
+      "500g beras",
+      "65ml santan kental",
+      "2 lembar daun salam",
+      "2 lembar daun pandan",
+      "1 batang serai, geprek",
+      "1 cm lengkuas, geprek",
+      "Garam secukupnya"
+    ],
+    "langkah": [
+      "Cuci beras hingga bersih",
+      "Masukkan beras, santan, daun salam, daun pandan, serai, lengkuas, dan garam ke dalam rice cooker",
+      "Tambahkan air secukupnya",
+      "Masak hingga nasi matang",
+      "Sajikan dengan ayam goreng, tempe orek, sambal, dan kerupuk"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T14:00:00.000Z",
+    "updated_at": "2024-09-30T14:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/222222/pexels-photo-222222.jpeg"
+  },
+  {
+    "id": 28,
+    "judul": "Mie Aceh",
+    "deskripsi": "Mie goreng atau kuah khas Aceh dengan bumbu rempah",
+    "bahan": [
+      "400g mie kuning tebal",
+      "200g daging sapi, potong dadu",
+      "100g udang, kupas",
+      "100g tauge",
+      "2 batang daun bawang, iris",
+      "2 sdm kecap manis",
+      "1 sdm saus tiram",
+      "Bumbu halus: bawang merah, bawang putih, cabai merah, jintan, kapulaga",
+      "Minyak untuk menumis"
+    ],
+    "langkah": [
+      "Rebus mie hingga al dente, tiriskan",
+      "Tumis bumbu halus hingga harum",
+      "Masukkan daging dan udang, masak hingga berubah warna",
+      "Tambahkan mie, tauge, kecap manis, dan saus tiram",
+      "Aduk rata hingga semua bahan tercampur",
+      "Tambahkan daun bawang, aduk sebentar",
+      "Sajikan panas dengan acar dan kerupuk"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T15:15:00.000Z",
+    "updated_at": "2024-09-30T15:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/232323/pexels-photo-232323.jpeg"
+  },
+  {
+    "id": 29,
+    "judul": "Kue Putu",
+    "deskripsi": "Kue tradisional berbahan dasar tepung beras dengan isian gula merah",
+    "bahan": [
+      "200g tepung beras",
+      "100g gula merah, sisir halus",
+      "50g kelapa parut",
+      "1/4 sdt garam",
+      "100ml air",
+      "Daun pandan untuk aroma"
+    ],
+    "langkah": [
+      "Campur tepung beras dengan garam",
+      "Tambahkan air sedikit demi sedikit hingga adonan berbutir",
+      "Siapkan cetakan bambu, lapisi dengan daun pandan",
+      "Masukkan adonan setengah cetakan, beri gula merah, tutup dengan sisa adonan",
+      "Kukus selama 10-15 menit",
+      "Sajikan dengan taburan kelapa parut"
+    ],
+    "categoryId": 3,
+    "userId": 1,
+    "created_at": "2024-09-30T16:30:00.000Z",
+    "updated_at": "2024-09-30T16:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/242424/pexels-photo-242424.jpeg"
+  },
+  {
+    "id": 30,
+    "judul": "Sate Lilit",
+    "deskripsi": "Sate khas Bali dengan daging ikan yang dibumbui dan dililitkan pada batang serai",
+    "bahan": [
+      "500g daging ikan tenggiri, giling",
+      "50g kelapa parut",
+      "2 sdm air jeruk nipis",
+      "Bumbu halus: bawang merah, bawang putih, cabai, kunyit, kencur, terasi",
+      "Garam dan gula secukupnya",
+      "Batang serai untuk tusukan"
+    ],
+    "langkah": [
+      "Campurkan daging ikan giling dengan kelapa parut",
+      "Tambahkan bumbu halus, air jeruk nipis, garam, dan gula",
+      "Aduk rata semua bahan",
+      "Ambil sedikit adonan, lilitkan pada batang serai",
+      "Panggang sate hingga matang dan kecokelatan",
+      "Sajikan dengan sambal matah"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-09-30T17:45:00.000Z",
+    "updated_at": "2024-09-30T17:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/252525/pexels-photo-252525.jpeg"
+  },
+  {
+    "id": 31,
+    "judul": "Klepon",
+    "deskripsi": "Kue tradisional berbentuk bulat dengan isian gula merah dan balutan kelapa parut",
+    "bahan": [
+      "200g tepung ketan",
+      "100ml air hangat",
+      "Pasta pandan secukupnya",
+      "100g gula merah, sisir halus",
+      "100g kelapa parut untuk balutan",
+      "1/4 sdt garam"
+    ],
+    "langkah": [
+      "Campurkan tepung ketan, air hangat, dan pasta pandan, uleni hingga kalis",
+      "Ambil sedikit adonan, pipihkan dan isi dengan gula merah",
+      "Bentuk menjadi bola-bola kecil",
+      "Rebus dalam air mendidih hingga mengapung",
+      "Angkat dan gulingkan pada kelapa parut",
+      "Sajikan"
+    ],
+    "categoryId": 3,
+    "userId": 1,
+    "created_at": "2024-09-30T19:00:00.000Z",
+    "updated_at": "2024-09-30T19:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/262626/pexels-photo-262626.jpeg"
+  },
+  {
+    "id": 32,
+    "judul": "Sambal Matah",
+    "deskripsi": "Sambal khas Bali dengan bahan mentah yang diiris halus",
+    "bahan": [
+      "10 buah cabai rawit, iris halus",
+      "5 siung bawang merah, iris halus",
+      "3 batang serai, ambil bagian putihnya, iris halus",
+      "5 lembar daun jeruk, buang tulang daunnya, iris halus",
+      "1 buah jeruk limau, ambil airnya",
+      "2 sdm minyak kelapa",
+      "Garam secukupnya"
+    ],
+    "langkah": [
+      "Campurkan semua bahan yang sudah diiris dalam mangkuk",
+      "Tambahkan air jeruk limau, minyak kelapa, dan garam",
+      "Aduk rata semua bahan",
+      "Biarkan sebentar agar bumbu meresap",
+      "Sajikan sebagai pendamping hidangan utama"
+    ],
+    "categoryId": 8,
+    "userId": 1,
+    "created_at": "2024-09-30T20:15:00.000Z",
+    "updated_at": "2024-09-30T20:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/272727/pexels-photo-272727.jpeg"
+  },
+  {
+    "id": 33,
+    "judul": "Laksa Bogor",
+    "deskripsi": "Mie kuah santan khas Bogor dengan berbagai topping",
+    "bahan": [
+      "200g bihun",
+      "200g tauge",
+      "100g daging ayam, rebus dan suwir",
+      "2 buah tahu, potong dadu dan goreng",
+      "2 butir telur rebus, belah dua",
+      "500ml santan",
+      "Bumbu halus: bawang merah, bawang putih, kemiri, kunyit",
+      "2 lembar daun salam",
+      "1 batang serai, geprek",
+      "Kemangi dan bawang goreng untuk taburan"
+    ],
+    "langkah": [
+      "Rebus bihun dan tauge hingga matang, tiriskan",
+      "Tumis bumbu halus dengan daun salam dan serai hingga harum",
+      "Tuang santan, masak hingga mendidih",
+      "Tata bihun, tauge, ayam suwir, tahu goreng, dan telur dalam mangkuk",
+      "Siram dengan kuah santan",
+      "Taburi dengan kemangi dan bawang goreng"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-09-30T21:30:00.000Z",
+    "updated_at": "2024-09-30T21:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/282828/pexels-photo-282828.jpeg"
+  },
+  {
+    "id": 34,
+    "judul": "Rujak Cingur",
+    "deskripsi": "Salad buah dan sayur khas Jawa Timur dengan saus kacang dan petis",
+    "bahan": [
+      "100g cingur (moncong sapi), rebus hingga empuk",
+      "1 buah timun, potong-potong",
+      "1 buah bengkoang, potong-potong",
+      "1 buah nanas, potong-potong",
+      "100g tauge, rebus sebentar",
+      "1 buah tahu goreng, potong dadu",
+      "1 buah tempe goreng, potong dadu",
+      "Bumbu: kacang tanah goreng, petis udang, gula merah, cabai rawit",
+      "Air asam jawa"
+    ],
+    "langkah": [
+      "Haluskan bumbu kacang, petis, gula merah, dan cabai rawit",
+      "Tambahkan air asam jawa, aduk rata",
+      "Potong cingur yang sudah direbus menjadi ukuran kecil",
+      "Campurkan semua bahan dalam mangkuk besar",
+      "Siram dengan bumbu rujak, aduk rata",
+      "Sajikan dengan kerupuk"
+    ],
+    "categoryId": 5,
+    "userId": 1,
+    "created_at": "2024-09-30T22:45:00.000Z",
+    "updated_at": "2024-09-30T22:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/292929/pexels-photo-292929.jpeg"
+  },
+  {
+    "id": 35,
+    "judul": "Kue Lapis Legit",
+    "deskripsi": "Kue berlapis dengan rasa mentega dan rempah yang khas",
+    "bahan": [
+      "500g mentega",
+      "400g gula pasir",
+      "30 butir kuning telur",
+      "50g susu bubuk",
+      "200g tepung terigu",
+      "1 sdt bumbu spekuk",
+      "1/2 sdt vanili bubuk"
+    ],
+    "langkah": [
+      "Kocok mentega dan gula hingga putih dan mengembang",
+      "Tambahkan kuning telur satu per satu, kocok rata",
+      "Masukkan susu bubuk, tepung terigu, bumbu spekuk, dan vanili, aduk rata",
+      "Tuang sedikit adonan ke dalam loyang yang sudah dialasi kertas roti",
+      "Panggang setiap lapisan hingga kecokelatan",
+      "Ulangi proses hingga adonan habis",
+      "Dinginkan dan potong sesuai selera"
+    ],
+    "categoryId": 3,
+    "userId": 1,
+    "created_at": "2024-10-01T00:00:00.000Z",
+    "updated_at": "2024-10-01T00:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/303030/pexels-photo-303030.jpeg"
+  },
+  {
+    "id": 36,
+    "judul": "Sup Konro",
+    "deskripsi": "Sup iga sapi khas Makassar dengan bumbu rempah yang kaya",
+    "bahan": [
+      "1 kg iga sapi",
+      "2 liter air",
+      "5 lembar daun salam",
+      "3 batang serai, geprek",
+      "3 cm lengkuas, geprek",
+      "Bumbu halus: bawang merah, bawang putih, kemiri, jintan, ketumbar, merica, pala",
+      "Kluwek, haluskan dan saring",
+      "Garam dan gula secukupnya"
+    ],
+    "langkah": [
+      "Rebus iga sapi dengan daun salam, serai, dan lengkuas hingga empuk",
+      "Tumis bumbu halus hingga harum",
+      "Masukkan tumisan bumbu dan kluwek ke dalam rebusan iga",
+      "Tambahkan garam dan gula, masak hingga bumbu meresap",
+      "Sajikan panas dengan buras (ketupat nasi)"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-10-01T01:15:00.000Z",
+    "updated_at": "2024-10-01T01:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/313131/pexels-photo-313131.jpeg"
+  },
+  {
+    "id": 37,
+    "judul": "Ketupat Sayur",
+    "deskripsi": "Ketupat dengan kuah sayur nangka dan gulai",
+    "bahan": [
+      "4 buah ketupat",
+      "200g nangka muda, potong-potong",
+      "100g kacang panjang, potong-potong",
+      "500ml santan",
+      "Bumbu halus: bawang merah, bawang putih, kemiri, kunyit, jahe",
+      "2 lembar daun salam",
+      "1 batang serai, geprek",
+      "Garam dan gula secukupnya"
+    ],
+    "langkah": [
+      "Rebus nangka hingga empuk, tiriskan",
+      "Tumis bumbu halus dengan daun salam dan serai hingga harum",
+      "Masukkan santan, didihkan",
+      "Tambahkan nangka dan kacang panjang, masak hingga matang",
+      "Bumbui dengan garam dan gula",
+      "Sajikan dengan ketupat"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-10-01T02:30:00.000Z",
+    "updated_at": "2024-10-01T02:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/323232/pexels-photo-323232.jpeg"
+  },
+  {
+    "id": 38,
+    "judul": "Kopi Joss",
+    "deskripsi": "Minuman kopi khas Yogyakarta dengan arang panas",
+    "bahan": [
+      "2 sdm kopi bubuk",
+      "2 sdm gula pasir",
+      "200ml air panas",
+      "1 buah arang panas"
+    ],
+    "langkah": [
+      "Seduh kopi dan gula dengan air panas dalam gelas tahan panas",
+      "Aduk hingga gula larut",
+      "Masukkan arang panas ke dalam kopi",
+      "Tunggu beberapa detik hingga terdengar suara 'joss'",
+      "Angkat arang dan sajikan kopi selagi panas"
+    ],
+    "categoryId": 4,
+    "userId": 1,
+    "created_at": "2024-10-01T03:45:00.000Z",
+    "updated_at": "2024-10-01T03:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/333333/pexels-photo-333333.jpeg"
+  },
+  {
+    "id": 39,
+    "judul": "Soto Lamongan",
+    "deskripsi": "Soto ayam khas Lamongan dengan bumbu kuning dan koya",
+    "bahan": [
+      "500g ayam, potong-potong",
+      "2 liter air",
+      "Bumbu halus: bawang merah, bawang putih, kunyit, jahe, kemiri",
+      "2 batang serai, geprek",
+      "3 lembar daun jeruk",
+      "Soun, seduh air panas",
+      "Telur rebus",
+      "Kol, iris halus",
+      "Koya (campuran kerupuk udang dan bawang putih goreng yang dihaluskan)",
+      "Jeruk nipis"
+    ],
+    "langkah": [
+      "Rebus ayam hingga empuk, angkat dan suwir-suwir",
+      "Tumis bumbu halus dengan serai dan daun jeruk hingga harum",
+      "Masukkan tumisan bumbu ke dalam kaldu ayam, didihkan",
+      "Tata soun, ayam suwir, kol, dan telur dalam mangkuk",
+      "Siram dengan kuah soto panas",
+      "Taburi dengan koya dan beri perasan jeruk nipis"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-10-01T05:00:00.000Z",
+    "updated_at": "2024-10-01T05:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/343434/pexels-photo-343434.jpeg"
+  },
+  {
+    "id": 40,
+    "judul": "Nasi Tumpeng",
+    "deskripsi": "Nasi kuning berbentuk kerucut dengan berbagai lauk pauk",
+    "bahan": [
+      "1 kg beras",
+      "200ml santan",
+      "3 lembar daun pandan",
+      "2 cm kunyit, parut",
+      "Garam secukupnya",
+      "Lauk pauk: ayam goreng, telur dadar, tempe orek, urap sayuran, sambal goreng ati, ikan asin"
+    ],
+    "langkah": [
+      "Cuci beras hingga bersih",
+      "Masak beras dengan santan, daun pandan, kunyit parut, dan garam",
+      "Setelah matang, cetak nasi dalam bentuk kerucut",
+      "Siapkan berbagai lauk pauk",
+      "Tata lauk pauk mengelilingi nasi tumpeng",
+      "Hias dengan daun pisang dan bunga-bungaan"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-10-01T06:15:00.000Z",
+    "updated_at": "2024-10-01T06:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/353535/pexels-photo-353535.jpeg"
+  },
+  {
+    "id": 41,
+    "judul": "Asinan Bogor",
+    "deskripsi": "Campuran buah dan sayur segar dengan kuah asam manis pedas",
+    "bahan": [
+      "100g nanas, potong dadu",
+      "100g bengkoang, potong dadu",
+      "100g mangga muda, potong dadu",
+      "100g jambu air, potong dadu",
+      "100g mentimun, potong dadu",
+      "50g kacang tanah goreng",
+      "Bumbu kuah: cabai rawit, bawang putih, gula merah, cuka, garam"
+    ],
+    "langkah": [
+      "Campurkan semua buah dan sayur yang sudah dipotong",
+      "Haluskan bumbu kuah",
+      "Rebus bumbu kuah dengan sedikit air hingga mendidih",
+      "Saring dan dinginkan kuah",
+      "Siramkan kuah ke campuran buah dan sayur",
+      "Taburi dengan kacang tanah goreng"
+    ],
+    "categoryId": 5,
+    "userId": 1,
+    "created_at": "2024-10-01T07:30:00.000Z",
+    "updated_at": "2024-10-01T07:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/363636/pexels-photo-363636.jpeg"
+  },
+  {
+    "id": 42,
+    "judul": "Gulai Ikan Patin",
+    "deskripsi": "Ikan patin yang dimasak dengan kuah santan dan rempah",
+    "bahan": [
+      "500g ikan patin, potong-potong",
+      "500ml santan",
+      "2 lembar daun kunyit",
+      "2 lembar daun jeruk",
+      "1 batang serai, geprek",
+      "Bumbu halus: bawang merah, bawang putih, kunyit, jahe, kemiri",
+      "Garam dan gula secukupnya"
+    ],
+    "langkah": [
+      "Tumis bumbu halus hingga harum",
+      "Tambahkan daun kunyit, daun jeruk, dan serai",
+      "Tuang santan, masak hingga mendidih",
+      "Masukkan potongan ikan patin",
+      "Masak hingga ikan matang dan kuah mengental",
+      "Sajikan dengan nasi putih"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-10-01T08:45:00.000Z",
+    "updated_at": "2024-10-01T08:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/373737/pexels-photo-373737.jpeg"
+  },
+  {
+    "id": 43,
+    "judul": "Kue Putu Mayang",
+    "deskripsi": "Kue tradisional berbentuk mi dengan saus gula merah",
+    "bahan": [
+      "250g tepung beras",
+      "50g tepung kanji",
+      "200ml air",
+      "1/4 sdt garam",
+      "Pewarna makanan (merah dan hijau)",
+      "Saus gula merah: 200g gula merah, 100ml air, 1 lembar daun pandan"
+    ],
+    "langkah": [
+      "Campurkan tepung beras, tepung kanji, air, dan garam",
+      "Bagi adonan menjadi 3 bagian, beri warna merah, hijau, dan biarkan putih",
+      "Cetak adonan menggunakan cetakan putu mayang",
+      "Kukus selama 10-15 menit",
+      "Untuk saus, rebus gula merah, air, dan daun pandan hingga kental",
+      "Sajikan putu mayang dengan saus gula merah"
+    ],
+    "categoryId": 3,
+    "userId": 1,
+    "created_at": "2024-10-01T10:00:00.000Z",
+    "updated_at": "2024-10-01T10:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/383838/pexels-photo-383838.jpeg"
+  },
+  {
+    "id": 44,
+    "judul": "Sate Padang",
+    "deskripsi": "Sate daging sapi dengan kuah kacang khas Padang",
+    "bahan": [
+      "500g daging sapi, potong dadu",
+      "Bumbu marinasi: bawang putih, ketumbar, garam",
+      "Bumbu kuah: kacang tanah goreng, bawang merah, bawang putih, cabai merah, jahe, lengkuas",
+      "Rempah: kayu manis, kapulaga, cengkeh",
+      "Kecap manis",
+      "Tusuk sate"
+    ],
+    "langkah": [
+      "Marinasi daging dengan bumbu selama 30 menit",
+      "Tusuk daging pada tusuk sate",
+      "Bakar sate hingga matang",
+      "Haluskan bumbu kuah, tumis dengan rempah hingga harum",
+      "Tambahkan air, masak hingga kuah mengental",
+      "Sajikan sate dengan kuah kacang dan taburan bawang goreng"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-10-01T11:15:00.000Z",
+    "updated_at": "2024-10-01T11:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/393939/pexels-photo-393939.jpeg"
+  },
+  {
+    "id": 45,
+    "judul": "Kerak Telor",
+    "deskripsi": "Makanan khas Betawi berbahan dasar beras ketan dan telur",
+    "bahan": [
+      "200g beras ketan, rendam semalaman",
+      "2 butir telur bebek",
+      "50g kelapa parut sangrai",
+      "2 sdm ebi, sangrai dan haluskan",
+      "Bawang goreng",
+      "Bumbu: bawang putih, merica, garam"
+    ],
+    "langkah": [
+      "Tiriskan beras ketan, campur dengan bumbu halus",
+      "Panaskan wajan anti lengket, tuang setengah adonan beras",
+      "Pecahkan telur di atasnya, ratakan",
+      "Taburkan kelapa parut dan ebi",
+      "Masak hingga bagian bawah kering dan kecokelatan",
+      "Balik dan masak sisi lainnya",
+      "Sajikan dengan taburan bawang goreng"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-10-01T12:30:00.000Z",
+    "updated_at": "2024-10-01T12:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/404040/pexels-photo-404040.jpeg"
+  },
+  {
+    "id": 46,
+    "judul": "Sayur Bening Bayam",
+    "deskripsi": "Sayur bayam berkuah bening dengan jagung manis",
+    "bahan": [
+      "200g bayam, petik daunnya",
+      "1 buah jagung manis, potong-potong",
+      "2 siung bawang merah, iris tipis",
+      "1 cm temu kunci, memarkan",
+      "1 liter air",
+      "Garam dan gula secukupnya"
+    ],
+    "langkah": [
+      "Didihkan air, masukkan jagung dan bawang merah",
+      "Setelah jagung setengah matang, masukkan bayam dan temu kunci",
+      "Bumbui dengan garam dan gula",
+      "Masak sebentar hingga bayam layu",
+      "Angkat dan sajikan"
+    ],
+    "categoryId": 6,
+    "userId": 1,
+    "created_at": "2024-10-01T13:45:00.000Z",
+    "updated_at": "2024-10-01T13:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/414141/pexels-photo-414141.jpeg"
+  },
+  {
+    "id": 47,
+    "judul": "Kue Lapis Sagu",
+    "deskripsi": "Kue lapis berwarna-warni berbahan dasar tepung sagu",
+    "bahan": [
+      "250g tepung sagu",
+      "200g gula pasir",
+      "800ml santan",
+      "1/4 sdt garam",
+      "Pewarna makanan (merah, hijau, kuning)"
+    ],
+    "langkah": [
+      "Campur tepung sagu, gula, santan, dan garam, aduk rata",
+      "Bagi adonan menjadi beberapa bagian, beri warna berbeda",
+      "Tuang satu warna adonan ke loyang yang sudah dialasi plastik",
+      "Kukus selama 5 menit",
+      "Tuang warna lain di atasnya, kukus lagi",
+      "Ulangi proses hingga adonan habis",
+      "Setelah dingin, potong sesuai selera"
+    ],
+    "categoryId": 3,
+    "userId": 1,
+    "created_at": "2024-10-01T15:00:00.000Z",
+    "updated_at": "2024-10-01T15:00:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/424242/pexels-photo-424242.jpeg"
+  },
+  {
+    "id": 48,
+    "judul": "Ayam Taliwang",
+    "deskripsi": "Ayam bakar khas Lombok dengan sambal pedas",
+    "bahan": [
+      "1 ekor ayam, belah dua",
+      "Bumbu halus: bawang merah, bawang putih, cabai merah, tomat, terasi",
+      "2 sdm minyak kelapa",
+      "2 sdm air jeruk limau",
+      "Garam dan gula secukupnya"
+    ],
+    "langkah": [
+      "Lumuri ayam dengan air jeruk limau dan garam",
+      "Tumis bumbu halus hingga harum",
+      "Balurkan bumbu ke seluruh permukaan ayam",
+      "Bakar ayam sambil sesekali dioles sisa bumbu",
+      "Sajikan dengan plecing kangkung"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-10-01T16:15:00.000Z",
+    "updated_at": "2024-10-01T16:15:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/434343/pexels-photo-434343.jpeg"
+  },
+  {
+    "id": 49,
+    "judul": "Es Doger",
+    "deskripsi": "Minuman segar khas Bandung dengan campuran es serut dan aneka isian",
+    "bahan": [
+      "Es serut",
+      "Sirup cocopandan",
+      "Susu kental manis",
+      "Santan",
+      "Tape singkong",
+      "Alpukat, potong dadu",
+      "Kelapa muda, serut",
+      "Cincau hitam, potong dadu",
+      "Pacar cina, rendam air"
+    ],
+    "langkah": [
+      "Siapkan gelas saji",
+      "Masukkan es serut ke dalam gelas",
+      "Tambahkan sirup cocopandan, susu kental manis, dan santan",
+      "Masukkan tape singkong, alpukat, kelapa muda, cincau hitam, dan pacar cina",
+      "Aduk rata dan sajikan segera"
+    ],
+    "categoryId": 5,
+    "userId": 1,
+    "created_at": "2024-10-01T17:30:00.000Z",
+    "updated_at": "2024-10-01T17:30:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/444444/pexels-photo-444444.jpeg"
+  },
+  {
+    "id": 50,
+    "judul": "Nasi Uduk",
+    "deskripsi": "Nasi yang dimasak dengan santan dan rempah-rempah, khas Jakarta",
+    "bahan": [
+      "500g beras",
+      "500ml santan",
+      "2 lembar daun salam",
+      "2 batang serai, memarkan",
+      "2 cm lengkuas, memarkan",
+      "Garam secukupnya",
+      "Pelengkap: telur dadar, tempe orek, bawang goreng, sambal kacang"
+    ],
+    "langkah": [
+      "Cuci beras hingga bersih",
+      "Masak beras dengan santan, daun salam, serai, lengkuas, dan garam",
+      "Setelah air menyusut, kukus nasi hingga matang",
+      "Sajikan nasi uduk dengan pelengkap",
+      "Taburi bawang goreng di atasnya"
+    ],
+    "categoryId": 1,
+    "userId": 1,
+    "created_at": "2024-10-01T18:45:00.000Z",
+    "updated_at": "2024-10-01T18:45:00.000Z",
+    "imageUrl": "https://images.pexels.com/photos/454545/pexels-photo-454545.jpeg"
   }
 ]
